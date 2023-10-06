@@ -1,0 +1,144 @@
+
+/*GENERAL STYLES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+section{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* LANDING PAGE STYLES */
+.landing{
+    background-size: cover no-repeat center center fixed;
+    filter: brightness(40%);
+    height: 90%;
+    width: 100%;
+
+}
+.hero > h3{
+    color: white;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    z-index: 9999;
+
+}
+.hero > h1{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 10px;
+    z-index: 9999;
+
+}
+.hero > h2{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    z-index: 9999;
+
+}
+
+.hero > h1 > span{
+    font-size: 57px;
+    color: cornflowerblue;
+}
+.hero > h3 > span{
+    font-size: 25px;
+    color: cornflowerblue;
+}
+.hero > p{
+    color: white;
+    position: absolute;
+    top: 50%;
+     left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    z-index: 9999;
+
+}
+
+select{
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    z-index: 9999;
+    border: 2px solid blue;
+    background-color: transparent;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+option{
+    background: black;
+}
+
+@media screen and (max-width: 650px){
+   .hero > h1{
+        left: 10px;
+    }
+    .hero > h2{
+        top: 50%;
+        left: 16px;
+    }
+    .hero > p{
+        top: 55%;
+        left: 16px;
+    }
+}
+
+/*MIDDLE STYLES */
+.middle{
+    background-color: azure;
+    padding: 55px;
+    margin-top: -60px;
+}
+
+.middle > img{
+    height: 350px;
+    width: 850px;
+    margin-right: 50px;
+}
+.middle > p{
+    font-weight: 700;
+}
+@media screen and (max-width: 650px){
+    .middle{
+        display: grid;
+    }
+    .middle > img{
+        margin-right: 20px;
+        width: 340px;
+        margin-bottom: 15px;
+        margin-left: -40px;
+    }
+
+    .middle > p{
+        margin-bottom: 15px;
+        width: 300px;
+    }
+ }
